@@ -41,9 +41,13 @@ img {
   margin: 65px auto;
   background-color: #14253d;
   border-radius: 15px;
+  padding: 1px;
 }
 
 .Card_image {
+  background-image: url("./images/image-equilibrium.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 278px;
   height: 278px;
   margin: 24px;
