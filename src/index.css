@@ -26,8 +26,165 @@ html {
 
 body {
   font-family: "Outfit", sans-serif;
+  background-color: #0d192b;
 }
 
 img {
   max-width: 100%;
+}
+
+/* Card Component */
+
+.Card {
+  width: 327px;
+  height: 543px;
+  margin: 65px auto;
+  background-color: #14253d;
+  border-radius: 15px;
+}
+
+.Card_image {
+  width: 278px;
+  height: 278px;
+  margin: 24px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.Card_content {
+  font: inherit;
+  text-align: left;
+  padding: 0 24px;
+}
+
+.Card_content h1 {
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.Card_content h1:hover,
+.Card_content h1:active {
+  color: #00fff7;
+}
+
+.Card_content p {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  font-weight: 300;
+  color: #8bacda;
+  margin-bottom: 16px;
+}
+
+.Card_price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 24px 15px 24px;
+  border-bottom: 0.5px solid #2f415b;
+  padding-bottom: 15px;
+}
+
+.Card_price-cost {
+  display: flex;
+  align-items: center;
+}
+
+.Card_price-cost p {
+  font: inherit;
+  font-weight: 600;
+  color: #00fff7;
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+  margin-left: 5px;
+}
+
+.Card_price-time {
+  display: flex;
+  align-items: center;
+}
+
+.Card_price-time p {
+  font: inherit;
+  font-weight: 400;
+  color: #8bacda;
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+  margin-left: 5px;
+}
+
+.Card_footer {
+  display: flex;
+  align-items: center;
+  margin: 0 24px;
+}
+
+.Card_footer-avatar {
+  height: 33px;
+}
+
+.Card_footer p {
+  font: inherit;
+  font-weight: 400;
+  color: #8bacda;
+  font-size: 1.5rem;
+  line-height: 1.9rem;
+  margin-left: 10px;
+}
+
+.Card_footer p span {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.Card_footer p span:hover,
+.Card_footer p span:active {
+  color: #00fff7;
+}
+
+@media (min-width: 768px) {
+  .Card {
+    width: 350px;
+    height: 596px;
+    margin: 65px auto;
+  }
+
+  .Card_image {
+    width: 302px;
+    height: 302px;
+  }
+
+  .Card_content h1 {
+    margin-bottom: 24px;
+  }
+
+  .Card_content p {
+    font-size: 1.8rem;
+    margin-bottom: 24px;
+  }
+
+  .Card_price {
+    padding-bottom: 24px;
+  }
+
+  .Card_price-cost p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-left: 10px;
+  }
+
+  .Card_price-time p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-left: 10px;
+  }
+
+  .Card_footer p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-left: 10px;
+  }
 }
