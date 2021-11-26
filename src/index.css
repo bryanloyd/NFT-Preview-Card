@@ -4,7 +4,7 @@
   /* ### Primary */
 
   --soft-blue: #8bacda;
-  --cyan: #00fff7;
+  --cyan: rgb(0, 255, 247);
 
   /* ### Neutral */
 
@@ -44,15 +44,37 @@ img {
   padding: 1px;
 }
 
-.Card_image {
-  background-image: url("./images/image-equilibrium.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+.Card_image img {
+  position: relative;
   width: 278px;
   height: 278px;
   margin: 24px;
   border-radius: 10px;
+}
+
+.Card_image-overlay {
+  position: absolute;
+  top: 89px;
+  width: 278px;
+  height: 278px;
+  z-index: 2;
+  margin: auto 24px;
+  border-radius: 10px;
+  background-color: rgba(0, 255, 247, 0.5);
   cursor: pointer;
+  opacity: 0;
+}
+
+.Card_image-overlay img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 30%;
+  top: 30%;
+}
+
+.Card_image-overlay:hover {
+  opacity: 1;
 }
 
 .Card_content {
@@ -128,6 +150,8 @@ img {
 
 .Card_footer-avatar {
   height: 33px;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
 }
 
 .Card_footer p {
@@ -156,9 +180,31 @@ img {
     margin: 65px auto;
   }
 
-  .Card_image {
+  .Card_image img {
     width: 302px;
     height: 302px;
+  }
+
+  .Card_image-overlay {
+    position: absolute;
+    top: 89px;
+    width: 302px;
+    height: 302px;
+    z-index: 1;
+    margin: auto 24px;
+    border-radius: 10px;
+    background-color: rgba(0, 255, 247, 0.5);
+    opacity: 0;
+  }
+
+  .Card_image-overlay img {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+  }
+
+  .Card_image-overlay:hover {
+    opacity: 1;
   }
 
   .Card_content h1 {
